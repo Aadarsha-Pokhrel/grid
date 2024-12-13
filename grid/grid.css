@@ -1,0 +1,72 @@
+
+ body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+} 
+.container{
+    height:60%;
+    width: 60%;
+    display:grid;
+    /* grid-template-rows:122px 122px 122px;
+    grid-template-columns:122px 122px 122px; */
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(6,1fr);
+    gap:3px;
+    object-fit: cover;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.rock{
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+
+.plate{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:3;
+    grid-column-end:5;
+
+
+}
+
+.house{
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:5;
+    grid-column-end:7;
+
+}
+
+.bedroom{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:3;
+
+}
+
+.door{
+    grid-row-start:2;
+    grid-row-end:4;
+    grid-column-start:3;
+    grid-column-end:5;
+
+}
+
+.river{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:5;
+    grid-column-end:7
+}
